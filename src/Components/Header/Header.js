@@ -9,7 +9,7 @@ const Header = () => {
             <div className="header-logo">
                 <img src={TeslaLogo} alt="Tesla Logo" />
             </div>
-            <ol>
+            <ol className="nav-centered">
                 <li className="menu-item">
                     <a href="https://www.tesla.com/models" 
                         >MODEL S</a>

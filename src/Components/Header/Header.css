@@ -1,19 +1,27 @@
 .site-header {
     display: flex;
-    height: 80px;
+    align-items: center;
     justify-content: space-between;
+    height: 50px;
     padding: 0 20px;
-    
+    position: relative;
+    color: #393c41;
 }
 
 .header-logo {
-    display: flex;
-    align-items: center;
-    height: 80px;
+    float: left;
 }
 
 .header-logo img{
-    height: 70px;
+    width: 105px;
+}
+
+.nav-centered {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .site-header ol{
@@ -30,5 +38,5 @@
 
 .menu-item a{
     text-decoration: none;
-    color: black;
+    color: #393c41;
 }
