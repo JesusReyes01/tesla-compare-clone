@@ -7,7 +7,9 @@ const Header = () => {
     return(
         <header className="site-header">
             <div className="header-logo">
-                <img src={TeslaLogo} alt="Tesla Logo" />
+                <a href='https://www.tesla.com'>
+                    <img src={TeslaLogo} alt="Tesla Logo" />
+                </a>
             </div>
             <ol className="nav-centered">
                 <li className="menu-item">
