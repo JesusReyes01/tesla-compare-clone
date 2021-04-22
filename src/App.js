@@ -1,7 +1,7 @@
 import React from 'react'
-import './App.css'
 import Header from './Components/Header/Header'
 import Title from './Components/Title/Title'
+import Footer from './Components/Footer/Footer'
 
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Header/>
       <Title/>
+      <Footer/>
     </div>
   );
 }
