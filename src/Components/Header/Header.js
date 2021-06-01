@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TeslaLogo from './Tesla_Logo.svg'
 import './Header.css'
+import { Squash as Hamburger } from 'hamburger-react'
 
 
 const Header = () => {
+
+    const [isOpen, setOpen] = useState(false)
+
     return(
         <header className="site-header">
             <div className="header-logo">
@@ -46,7 +50,7 @@ const Header = () => {
                     <a href="https://www.tesla.com/models"
                         >TESLA ACCOUNT</a>
                 </li>
-                <li className="menu-item">HAM-MENU
+                <li className="menu-item"><Hamburger toggled={isOpen} toggle={setOpen} />
                 </li>
             </ol>
         </header>
