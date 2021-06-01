@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import TeslaLogo from './Tesla_Logo.svg'
 import './Header.css'
 import { Squash as Hamburger } from 'hamburger-react'
+import SideMenu from '../SideMenu/SideMenu'
 
 
 const Header = () => {
@@ -52,9 +53,13 @@ const Header = () => {
                 </li>
                 <li className="menu-item"><Hamburger toggled={isOpen} toggle={setOpen} />
                 </li>
-            </ol>
+            </ol>  
+            <SideMenu className='side-menu'/>
+            {/* <SideMenu className={isOpen?'side-menu sld':'side-menu'}/> */}
+            
         </header>
     )
 }
 
 export default Header
+
