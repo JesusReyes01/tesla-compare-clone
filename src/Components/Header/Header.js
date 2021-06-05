@@ -36,13 +36,13 @@ const Header = () => {
                 <li className="menu-item">
                     <a href="https://www.tesla.com/solarroof" 
                         >SOLAR ROOF</a>
-                </li>
+                </li> 
                 <li className="menu-item">
                     <a href="https://www.tesla.com/solarpanels"
                         >SOLAR PANELS</a>
                 </li>
             </ol>
-            <ol>
+            <ol className='top-corner-links'>
                 <li className="menu-item">
                     <a href="https://www.tesla.com/shop"
                         >SHOP</a>
@@ -51,11 +51,11 @@ const Header = () => {
                     <a href="https://www.tesla.com/models"
                         >TESLA ACCOUNT</a>
                 </li>
-                <li className="menu-item"><Hamburger toggled={isOpen} toggle={setOpen} />
+                <li className="menu-item menu-fixed"><Hamburger toggled={isOpen} toggle={setOpen} />
                 </li>
             </ol>  
-            <SideMenu className='side-menu'/>
-            {/* <SideMenu className={isOpen?'side-menu sld':'side-menu'}/> */}
+            {/* <SideMenu className='side-menu'/> */}
+            <SideMenu className={isOpen?'side-menu':'side-menu sld'}/>
             
         </header>
     )
