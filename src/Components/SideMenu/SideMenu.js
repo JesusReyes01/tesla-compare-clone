@@ -4,20 +4,20 @@ const SideMenu = (props) => {
     return (
         <div {...props}>
             <ol>
-                <li><a>EXISTING INVENTORY</a></li>
-                <li><a>USED INVENTORY</a></li>
-                <li><a>TRADE-IN</a></li>
-                <li><a>CYBERTRUCK</a></li>
-                <li><a>ROADSTER</a></li>
-                <li><a>SEMI</a></li>
-                <li><a>CHARGING</a></li>
-                <li><a>POWERWALL</a></li>
-                <li><a>COMMERCIAL ENERGY</a></li>
-                <li><a>UTILITIES</a></li>
-                <li><a>TEST DRIVE</a></li>
-                <li><a>FIND US</a></li>
-                <li><a>SUPPORT</a></li>
-                <li><a>UNITED STATES</a></li>
+                <li><a href="https://www.tesla.com/inventory/new/m3">EXISTING INVENTORY</a></li>
+                <li><a href="https://www.tesla.com/inventory/used/m3">USED INVENTORY</a></li>
+                <li><a href="https://www.tesla.com/cybertruck">TRADE-IN</a></li>
+                <li><a href="https://www.w3schools.com">CYBERTRUCK</a></li>
+                <li><a href="https://www.tesla.com/roadster">ROADSTER</a></li>
+                <li><a href="https://www.tesla.com/semi">SEMI</a></li>
+                <li><a href="https://www.tesla.com/charging">CHARGING</a></li>
+                <li><a href="https://www.tesla.com/powerwall">POWERWALL</a></li>
+                <li><a href="https://www.tesla.com/commercial">COMMERCIAL ENERGY</a></li>
+                <li><a href="https://www.tesla.com/utilities">UTILITIES</a></li>
+                <li><a href="https://www.tesla.com/drive">TEST DRIVE</a></li>
+                <li><a href="https://www.tesla.com/findus">FIND US</a></li>
+                <li><a href="https://www.tesla.com/support">SUPPORT</a></li>
+                <li><a href="https://www.w3schools.com">UNITED STATES</a></li>
 
             </ol>
 
