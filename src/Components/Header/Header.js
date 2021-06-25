@@ -42,7 +42,7 @@ const Header = () => {
                         >SOLAR PANELS</a>
                 </li>
             </ol>
-            <ol className='top-corner-links'>
+            <ol className='git'>
                 <li className="menu-item">
                     <a href="https://www.tesla.com/shop"
                         >SHOP</a>

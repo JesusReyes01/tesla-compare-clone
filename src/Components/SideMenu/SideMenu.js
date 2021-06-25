@@ -18,7 +18,6 @@ const SideMenu = (props) => {
                 <li><a href="https://www.tesla.com/findus">FIND US</a></li>
                 <li><a href="https://www.tesla.com/support">SUPPORT</a></li>
                 <li><a href="https://www.w3schools.com">UNITED STATES</a></li>
-
             </ol>
 
         </div>
