@@ -38,6 +38,7 @@
     align-items: center;
     border-radius: 10px;
     transition: .5s;
+    cursor: pointer;
 }
 
 .menu-item:hover {
