@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: 54px;
     padding: 0 20px;
     position: relative;
     color: #393c41;
@@ -33,12 +33,25 @@
 }
 
 .menu-item {
-    margin: 0 10px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.menu-item:hover {
+    background-color: rgb(235, 235, 235);
 }
 
 .menu-item a{
     text-decoration: none;
     color: #393c41;
+    padding: 4px 8px;
+}
+
+.menu-item span{
+    margin: 0px 8px;
 }
 
 .menu-fixed {

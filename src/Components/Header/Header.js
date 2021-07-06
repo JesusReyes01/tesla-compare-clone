@@ -9,6 +9,10 @@ const Header = () => {
 
     const [isOpen, setOpen] = useState(false)
 
+    const toggleMenu = () => {
+        setOpen(!isOpen)
+    }
+
     return(
         <header className="site-header">
             <div className="header-logo">
@@ -18,43 +22,35 @@ const Header = () => {
             </div>
             <ol className="nav-centered">
                 <li className="menu-item">
-                    <a href="https://www.tesla.com/models" 
-                        >MODEL S</a>
+                    <a href="https://www.tesla.com/models" ><span>Model S</span></a>
                 </li>
                 <li className="menu-item">
-                    <a href="https://www.tesla.com/model3" 
-                        >MODEL 3</a>
+                    <a href="https://www.tesla.com/model3" ><span>Model 3</span></a>
                 </li>
                 <li className="menu-item">
-                    <a href="https://www.tesla.com/modelx" 
-                        >MODEL X</a>
+                    <a href="https://www.tesla.com/modelx" ><span>Model X</span></a>
                 </li>
                 <li className="menu-item">
-                    <a href="https://www.tesla.com/modely" 
-                        >MODEL Y</a>
+                    <a href="https://www.tesla.com/modely" ><span>Model Y</span></a>
                 </li>
                 <li className="menu-item">
-                    <a href="https://www.tesla.com/solarroof" 
-                        >SOLAR ROOF</a>
+                    <a href="https://www.tesla.com/solarroof" ><span>Solar Roof</span></a>
                 </li> 
                 <li className="menu-item">
-                    <a href="https://www.tesla.com/solarpanels"
-                        >SOLAR PANELS</a>
+                    <a href="https://www.tesla.com/solarpanels"><span>Solar Panels</span></a>
                 </li>
             </ol>
             <ol className='git'>
                 <li className="menu-item">
-                    <a href="https://www.tesla.com/shop"
-                        >SHOP</a>
+                    <a href="https://www.tesla.com/shop"><span>Shop</span></a>
                 </li>
                 <li className="menu-item">
-                    <a href="https://www.tesla.com/models"
-                        >TESLA ACCOUNT</a>
+                    <a href="https://www.tesla.com/models"><span>Account</span></a>
                 </li>
-                <li className="menu-item menu-fixed"><Hamburger toggled={isOpen} toggle={setOpen} />
+                <li className="menu-item" onClick={toggleMenu}>
+                    <span>Menu</span>
                 </li>
             </ol>  
-            {/* <SideMenu className='side-menu'/> */}
             <SideMenu className={isOpen?'side-menu':'side-menu sld'}/>
             
         </header>
