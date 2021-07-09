@@ -3,7 +3,7 @@ import React from 'react'
 const SideMenu = (props) => {
     return (
         <div {...props}>
-            <ol>
+            <ol className='menu-list'>
                 <li><a href="https://www.tesla.com/inventory/new/m3">EXISTING INVENTORY</a></li>
                 <li><a href="https://www.tesla.com/inventory/used/m3">USED INVENTORY</a></li>
                 <li><a href="https://www.tesla.com/cybertruck">TRADE-IN</a></li>

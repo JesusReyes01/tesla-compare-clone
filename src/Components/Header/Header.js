@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import TeslaLogo from './Tesla_Logo.svg'
 import './Header.css'
-import { Squash as Hamburger } from 'hamburger-react'
+// import { Squash as Hamburger } from 'hamburger-react'
 import SideMenu from '../SideMenu/SideMenu'
 
 
@@ -51,7 +51,7 @@ const Header = () => {
                     <span>Menu</span>
                 </li>
             </ol>  
-            <SideMenu className={isOpen?'side-menu':'side-menu sld'}/>
+            <SideMenu className={isOpen?'side-menu':'side-menu sld'} toggleMenu={toggleMenu}/>
             
         </header>
     )
