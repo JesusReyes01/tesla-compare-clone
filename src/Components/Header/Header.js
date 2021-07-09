@@ -51,7 +51,8 @@ const Header = () => {
                     <span>Menu</span>
                 </li>
             </ol>  
-            <SideMenu className={isOpen?'side-menu':'side-menu sld'} toggleMenu={toggleMenu}/>
+            {/* <SideMenu className={isOpen?'side-menu':'side-menu sld'} toggleMenu={toggleMenu}/> */}
+            <SideMenu className={isOpen?'sld':null} toggleMenu={toggleMenu}/>
             
         </header>
     )
